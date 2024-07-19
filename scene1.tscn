@@ -1,5 +1,10 @@
-[gd_scene format=3 uid="uid://r2x1td2xxtor"]
+[gd_scene load_steps=2 format=3 uid="uid://r2x1td2xxtor"]
+
+[ext_resource type="Texture2D" uid="uid://gkb4nnx05nx8" path="res://res/kenney_scribble-platformer/PNG/Default/character_squareGreen.png" id="1_m8nr0"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+[node name="Character" type="CharacterBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Character"]
+texture = ExtResource("1_m8nr0")
