@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://63jvcfvauvqv"]
+
+[ext_resource type="Texture2D" uid="uid://bk1ys0hbq8nsq" path="res://res/kenney_scribble-platformer/PNG/Default/tile_border.png" id="1_1ndiw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ed1yu"]
+size = Vector2(9.15, 1.35)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="TileBridge" type="Sprite2D" parent="."]
+position = Vector2(-1.00001, -5.5)
+scale = Vector2(3.09375, 0.453125)
+texture = ExtResource("1_1ndiw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.500007, -5.5)
+scale = Vector2(20, 20)
+shape = SubResource("RectangleShape2D_ed1yu")
+one_way_collision = true

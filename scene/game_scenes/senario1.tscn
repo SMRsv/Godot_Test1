@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://b58w8u13lkpb0"]
+
+[ext_resource type="PackedScene" uid="uid://bfjvssorbhpxe" path="res://scene/floor.tscn" id="1_a2r1t"]
+[ext_resource type="PackedScene" uid="uid://dbl02e7l10nxn" path="res://scene/platform.tscn" id="2_vsfia"]
+[ext_resource type="PackedScene" uid="uid://63jvcfvauvqv" path="res://scene/platform2.tscn" id="3_jr02c"]
+
+[node name="Senario1" type="Node2D"]
+
+[node name="StaticBody2D" parent="." instance=ExtResource("1_a2r1t")]
+position = Vector2(380, 528)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("2_vsfia")]
+position = Vector2(191, 429)
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("3_jr02c")]
+position = Vector2(491, 414)

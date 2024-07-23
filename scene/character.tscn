@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://r2x1td2xxtor"]
+
+[ext_resource type="Texture2D" uid="uid://gkb4nnx05nx8" path="res://res/kenney_scribble-platformer/PNG/Default/character_squareGreen.png" id="1_m8nr0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bjrim"]
+size = Vector2(39, 61)
+
+[node name="Character" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_m8nr0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_bjrim")
